@@ -1,7 +1,3 @@
-
-# README.md
-
-```markdown
 # 🚀 Missile Defence Game
 
 A 2D shooter game built with OpenGL and GLUT where you control a tank to defend against incoming missiles. Built from scratch using fundamental computer graphics algorithms.
@@ -186,7 +182,6 @@ Window size: **900 × 600 pixels**
 ## 📝 License
 
 This project was made for educational purposes as part of our university coursework.
-```
 
 ---
 
