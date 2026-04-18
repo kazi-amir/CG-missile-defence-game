@@ -18,6 +18,7 @@ const float missileSpeed = 1.4;
 int lives = 5;
 int score = 0;
 
+//For Clouds, Stars, Bullets, Missiles and Explosions
 const int maxClouds = 6;
 typedef struct Cloud{
     float x, y, speed;
@@ -746,8 +747,8 @@ void spawnBullet() {
     }
 }
 void drawOneBullet(float bx, float by) {
-    // Bullet body (yellow)
-    glColor3f(1.0, 0.9, 0.0);
+    // Bullet body (red - yellow)
+    glColor3f(1.0, 0.5, 0.0);
     glBegin(GL_QUADS);
         glVertex2f(bx - 2, by);
         glVertex2f(bx + 2, by);
@@ -940,13 +941,12 @@ void checkColission(){
 
             float dist = sqrt((dx * dx) + (dy * dy));
 
-            if(dist < 18){
+            if(dist < 22){
                 //Hits bullet
                 spawnExplosion(missile[j].x, missile[j].y + 15);
                 bullet[i].isActive = 0;
                 missile[j].isActive = 0;
                 score++;
-
                 break;
             }
         }
@@ -1147,19 +1147,19 @@ void display() {
 
         if (muzzleFlash > 0) {
             glColor3f(1.0, 1.0, 0.5);
-            drawFilledCircle(tankX + 60, 170, 8);
+            drawFilledCircle(tankX + 60, 155, 8);
         }
 
         drawAllBullets();
         drawAllMissiles();
         drawAllExplosion();
-        drawHUD();                    // ← HUD on top
+        drawHUD();
     } else {
-        // Still show tank and remaining explosions
+        // Show tank and remaining explosions
         drawTank(tankX, 25);
         drawAllExplosion();
         drawHUD();
-        drawGameOver();               // ← Game Over panel on top
+        drawGameOver();
     }
 
     glFlush();
