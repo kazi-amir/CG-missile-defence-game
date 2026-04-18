@@ -146,8 +146,8 @@ game.exe
 ```
 (0, 600) ──────────────────── (900, 600)
     │   SKY + CLOUDS + SUN/MOON          │
-    │   MOUNTAINS                         │
-    │   BUILDINGS + TREES                 │
+    │   MOUNTAINS                        │
+    │   BUILDINGS + TREES                │
     │   GRASS + BUSHES + LAMPS           │
     │   ══ ROAD (tank moves here) ══     │
 (0, 0) ────────────────────── (900, 0)
