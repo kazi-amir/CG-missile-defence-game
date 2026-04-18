@@ -39,14 +39,13 @@ Everything is drawn using **Bresenham's Line Algorithm** and **Midpoint Circle A
 ## 🖥️ Screenshots
 
 ### Day Mode
-> *(add screenshot here)*
+![Day Mode](screenshots/day.png)
 
 ### Night Mode
-> *(add screenshot here)*
+![Night Mode](screenshots/night.png)
 
 ### Game Over
-> *(add screenshot here)*
-
+![Game Over](screenshots/gameover.png)
 ---
 
 ## 🔧 Algorithms Used
@@ -119,7 +118,7 @@ game.exe
 
 ### Windows (CodeBlocks)
 
-1. Create a new empty project
+1. Create a new empty OpenGL project
 2. Add `main.cpp` to the project
 3. Go to **Settings → Compiler → Linker Settings**
 4. Add these libraries: `-lfreeglut -lopengl32 -lglu32`
@@ -184,16 +183,3 @@ Window size: **900 × 600 pixels**
 This project was made for educational purposes as part of our university coursework.
 
 ---
-
-**To add screenshots**, take 3 screenshots (day, night, game over), put them in a `screenshots/` folder, and update the README like this:
-
-```markdown
-### Day Mode
-![Day Mode](screenshots/day.png)
-
-### Night Mode
-![Night Mode](screenshots/night.png)
-
-### Game Over
-![Game Over](screenshots/gameover.png)
-```
