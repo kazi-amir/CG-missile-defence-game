@@ -941,7 +941,7 @@ void checkColission(){
 
             float dist = sqrt((dx * dx) + (dy * dy));
 
-            if(dist < 22){
+            if(dist < 20){
                 //Hits bullet
                 spawnExplosion(missile[j].x, missile[j].y + 15);
                 bullet[i].isActive = 0;
@@ -962,7 +962,7 @@ void drawString(float x, float y, const char* str, void* font) {
     }
 }
 
-//Draw UHD 
+//Draw UHD
 void drawHUD() {
     char scoreStr[50];
     char livesStr[50];
@@ -984,7 +984,7 @@ void drawHUD() {
     // Controls hint
     if(isNight){
         glColor3f(0.9, 0.9, 0.9);
-    } 
+    }
     else {
         glColor3f(0.1, 0.1, 0.1);
     }
